@@ -1,10 +1,10 @@
 /*
-Увеличивает производительность базы данных, плохо когда один и тот же сложный запрос
-делают постоянно.
-Перед выполнением запроса необходимо
-1) Какие выражения используются в запросе
-2) Построить план выполнения запроса, например какие индексы должны быть использованы
-3) Запрос который находится в хранимой процедуре компилируется только один раз*/
+Increasesing database performance,it's bad when have the same complex query
+do constantly.
+Before executing a request,
+1) What expressions are used in the query
+2) Build a query execution plan, such as which indexes should be used
+3) A query that is in a stored procedure is compiled only once */
 
 DROP FUNCTION clothes_shops.analise_stores();
 
@@ -28,10 +28,9 @@ RETURNS TABLE (
 $$ LANGUAGE SQL;
 
 
-
+/* A new item new_clothes has appeared in the shop in a quantity of count pieces */
 SELECT * FROM clothes_shops.analise_stores();
 
-/* В магазине shop появилась новая вещь new_clothes в количестве count штук  */
 -- TODO
 -- CREATE OR REPLACE FUNCTION clothes_shops.insert_new_clothes(
 --     shop VARCHAR(60), new_clothes_nm VARCHAR()
