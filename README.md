@@ -4,7 +4,7 @@
 Designing a database of online clothing stores.
 
 ### Conceptual model
-![tag1](Images/ConceptModel.png "Conceptual model of the database").
+![tag1](images/ConceptualModel.png "Conceptual model of the database").
 
 Explanation of conceptual model relationships:
 
@@ -37,7 +37,7 @@ position of the employee, a new line is created in which his new position and
 salary with the addition of the start and end date when a particular employee worked
 specific position.
 
-![tag1](Images/LogicalModel.png "Logical model of the database").
+![tag1](images/LogicalModel.png "Logical model of the database").
 
 ### Physical Model
 
